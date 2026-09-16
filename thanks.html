@@ -1,0 +1,148 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>FlashCard</title><meta name="description" content="FlashCard"><link rel="icon" type="image/svg+xml" href="favicon.svg"><meta name="theme-color" content="#131313"><link rel="preload" href="_astro/soehne-regular._HNoaqeZ.woff2?dpl=dpl_AF7U9PUJpxrfoo2N99aDbBza8XbY" as="font" type="font/woff2" crossorigin><link rel="preload" href="_astro/tiempos-headline-bold.Dv9xb85i.woff2?dpl=dpl_AF7U9PUJpxrfoo2N99aDbBza8XbY" as="font" type="font/woff2" crossorigin><link rel="preload" href="_astro/tiempos-headline-bold-italic.YZpGMJLx.woff2?dpl=dpl_AF7U9PUJpxrfoo2N99aDbBza8XbY" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="_astro/Base.BvN_dpGX.css"><link rel="stylesheet" href="_astro/index.DHv97tDu.css"><style>html,body{margin:0;height:100%;background:#131313}.ticket-mark[data-astro-cid-bvaltcfr]{width:45.21%;top:15.445%;left:27.395%}.ticket-entrance[data-astro-cid-bvaltcfr]{opacity:0;transform:translateY(26px) scale(.82);transition-duration:.9s;transition-timing-function:cubic-bezier(.34,1.3,.4,1)}.ticket-stage[data-astro-cid-bvaltcfr][data-visible] .ticket-entrance[data-astro-cid-bvaltcfr]{opacity:1;transform:none}.ticket-glow[data-astro-cid-bvaltcfr]{transition-duration:.9s}#flashcard>signup-aurora{display:none}
+/* ---- skins ---- */
+#flashcard[data-skin="amber"] .ticket[data-astro-cid-bvaltcfr]{--card-colors:radial-gradient(ellipse 65% 38% at 0% 0%,#f9dec3,transparent),radial-gradient(ellipse 70% 60% at 100% 100%,#f3b17499,transparent),radial-gradient(ellipse 70% 60% at 100% 85%,#f4b28355,transparent),linear-gradient(var(--rainbow-angle),#956d3c calc(0% + var(--rainbow-shift)),#c6984b calc(16% + var(--rainbow-shift)),#e2be6b calc(25% + var(--rainbow-shift)),#f9e6b3 calc(32% + var(--rainbow-shift)),#fffcf0 calc(43% + var(--rainbow-shift)),#fbebc4 calc(51% + var(--rainbow-shift)),#f1d589 calc(57% + var(--rainbow-shift)),#d3aa47 calc(69% + var(--rainbow-shift)),#ad853c calc(83% + var(--rainbow-shift)),#7d5b31cc calc(100% + var(--rainbow-shift)))}
+#flashcard[data-skin="amber"] .ticket-glow[data-astro-cid-bvaltcfr]{background:radial-gradient(160px 170px at 52% 32%,#fbcc8f55,#0000 100%),radial-gradient(270px 240px at 54% 39%,#f3ad5e33,#0000 100%),radial-gradient(320px 310px at 56% 57%,#bb78562b,#0000 100%),radial-gradient(460px 520px at 46% 38%,#f9dec338,#0000 100%)}
+#flashcard[data-skin="emerald"] .ticket[data-astro-cid-bvaltcfr]{--card-colors:radial-gradient(ellipse 65% 38% at 0% 0%,#bef0d8,transparent),radial-gradient(ellipse 70% 60% at 100% 100%,#47dca999,transparent),radial-gradient(ellipse 70% 60% at 100% 85%,#47e8bb55,transparent),linear-gradient(var(--rainbow-angle),#367c65 calc(0% + var(--rainbow-shift)),#449b7d calc(16% + var(--rainbow-shift)),#61c2a0 calc(25% + var(--rainbow-shift)),#c0f4dd calc(32% + var(--rainbow-shift)),#f1f7f7 calc(43% + var(--rainbow-shift)),#c2f7df calc(51% + var(--rainbow-shift)),#80d4b2 calc(57% + var(--rainbow-shift)),#52b08f calc(69% + var(--rainbow-shift)),#3f8b71 calc(83% + var(--rainbow-shift)),#2b6754cc calc(100% + var(--rainbow-shift)))}
+#flashcard[data-skin="emerald"] .ticket-glow[data-astro-cid-bvaltcfr]{background:radial-gradient(160px 170px at 52% 32%,#b2f3d555,#0000 100%),radial-gradient(270px 240px at 54% 39%,#47d5ab33,#0000 100%),radial-gradient(320px 310px at 56% 57%,#45bb972b,#0000 100%),radial-gradient(460px 520px at 46% 38%,#bef7e138,#0000 100%)}
+#flashcard[data-skin="amethyst"] .ticket[data-astro-cid-bvaltcfr]{--card-colors:radial-gradient(ellipse 65% 38% at 0% 0%,#e5c8fa,transparent),radial-gradient(ellipse 70% 60% at 100% 100%,#927ccb99,transparent),radial-gradient(ellipse 70% 60% at 100% 85%,#ebb2d155,transparent),linear-gradient(var(--rainbow-angle),#624887 calc(0% + var(--rainbow-shift)),#7c5dac calc(16% + var(--rainbow-shift)),#a381d3 calc(25% + var(--rainbow-shift)),#dbbff8 calc(32% + var(--rainbow-shift)),#fcf3fd calc(43% + var(--rainbow-shift)),#edd8fb calc(51% + var(--rainbow-shift)),#caade9 calc(57% + var(--rainbow-shift)),#9c7bcd calc(69% + var(--rainbow-shift)),#795fa4 calc(83% + var(--rainbow-shift)),#5c487fcc calc(100% + var(--rainbow-shift)))}
+#flashcard[data-skin="amethyst"] .ticket-glow[data-astro-cid-bvaltcfr]{background:radial-gradient(160px 170px at 52% 32%,#daccf855,#0000 100%),radial-gradient(270px 240px at 54% 39%,#986fec33,#0000 100%),radial-gradient(320px 310px at 56% 57%,#ba74dc2b,#0000 100%),radial-gradient(460px 520px at 46% 38%,#a186f438,#0000 100%)}
+#flashcard[data-skin="rose"] .ticket[data-astro-cid-bvaltcfr]{--card-colors:radial-gradient(ellipse 65% 38% at 0% 0%,#f7cbd3,transparent),radial-gradient(ellipse 70% 60% at 100% 100%,#eaa08799,transparent),radial-gradient(ellipse 70% 60% at 100% 85%,#ef996855,transparent),linear-gradient(var(--rainbow-angle),#88414f calc(0% + var(--rainbow-shift)),#aa5a67 calc(16% + var(--rainbow-shift)),#cd7380 calc(25% + var(--rainbow-shift)),#f5c0c9 calc(32% + var(--rainbow-shift)),#fcf1f3 calc(43% + var(--rainbow-shift)),#f7d7dc calc(51% + var(--rainbow-shift)),#e8a2ad calc(57% + var(--rainbow-shift)),#c57382 calc(69% + var(--rainbow-shift)),#a05a67 calc(83% + var(--rainbow-shift)),#7a4550cc calc(100% + var(--rainbow-shift)))}
+#flashcard[data-skin="rose"] .ticket-glow[data-astro-cid-bvaltcfr]{background:radial-gradient(160px 170px at 52% 32%,#f5c4cd55,#0000 100%),radial-gradient(270px 240px at 54% 39%,#ec859933,#0000 100%),radial-gradient(320px 310px at 56% 57%,#cc64752b,#0000 100%),radial-gradient(460px 520px at 46% 38%,#f3a8b838,#0000 100%)}
+#flashcard[data-skin="onyx-silver"] .ticket[data-astro-cid-bvaltcfr]{--card-colors:radial-gradient(ellipse 65% 38% at 0% 0%,#c8c8d499,transparent),radial-gradient(ellipse 70% 60% at 100% 100%,#8a8a9699,transparent),radial-gradient(ellipse 70% 60% at 100% 85%,#c8c8d455,transparent),linear-gradient(var(--rainbow-angle),#0f0f12 calc(0% + var(--rainbow-shift)),#2b2b31 calc(16% + var(--rainbow-shift)),#5a5a64 calc(25% + var(--rainbow-shift)),#c8c8d4 calc(32% + var(--rainbow-shift)),#f4f4f8 calc(43% + var(--rainbow-shift)),#a8a8b4 calc(51% + var(--rainbow-shift)),#4a4a52 calc(57% + var(--rainbow-shift)),#c8c8d4 calc(69% + var(--rainbow-shift)),#202026 calc(83% + var(--rainbow-shift)),#0c0c0fcc calc(100% + var(--rainbow-shift)))}#flashcard[data-skin="onyx-silver"] .ticket-glow[data-astro-cid-bvaltcfr]{background:radial-gradient(160px 170px at 52% 32%,#d8d8e455,#0000 100%),radial-gradient(270px 240px at 54% 39%,#8a8a9633,#0000 100%),radial-gradient(320px 310px at 56% 57%,#c8c8d42b,#0000 100%),radial-gradient(460px 520px at 46% 38%,#b8b8c438,#0000 100%)}#flashcard[data-skin="onyx-silver"] .foil-text[data-astro-cid-bvaltcfr]{background-image:linear-gradient(var(--rainbow-angle),#6a6a74 calc(0% + var(--rainbow-shift)),#c8c8d4 calc(30% + var(--rainbow-shift)),#f4f4f8 calc(50% + var(--rainbow-shift)),#a8a8b4 calc(70% + var(--rainbow-shift)),#7a7a84 calc(100% + var(--rainbow-shift)))}/* ---- skin bar ---- */
+.skin-bar{position:absolute;left:50%;bottom:26px;transform:translateX(-50%);z-index:30;display:flex;align-items:center;gap:10px;padding:10px 14px;border-radius:999px;background:#131313cc;border:1px solid #ffffff1f;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);font:500 12px/1 var(--font-body,system-ui,sans-serif);color:#fffd;opacity:0;translate:0 14px;transition:opacity .6s ease,translate .6s ease;pointer-events:none}
+#flashcard[data-ui-ready] .skin-bar{opacity:1;translate:0 0;pointer-events:auto}
+
+.skin-dot{width:22px;height:22px;border-radius:50%;border:0;padding:0;cursor:pointer;background:var(--dot);box-shadow:inset 0 0 0 1px #ffffff2e;outline:2px solid transparent;outline-offset:2px;transition:outline-color .2s,transform .2s}
+.skin-dot:hover{transform:scale(1.14)}
+.skin-dot[aria-pressed="true"]{outline-color:#ffffffd9}
+.skin-sep{width:1px;height:16px;background:#ffffff26}
+.skin-btn{display:inline-flex;align-items:center;gap:6px;padding:7px 12px;border-radius:999px;border:1px solid #ffffff26;background:#ffffff14;color:#fffd;font:inherit;cursor:pointer;transition:background .2s}
+.skin-btn:hover{background:#ffffff29}
+.skin-btn input{display:none}
+/* ---- edit panel ---- */
+.edit-panel{position:absolute;left:50%;bottom:78px;transform:translateX(-50%);z-index:31;display:flex;flex-direction:column;gap:10px;padding:14px;border-radius:18px;background:#131313e0;border:1px solid #ffffff1f;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);font:500 12px/1.4 var(--font-body,system-ui,sans-serif);color:#fffd;width:min(320px,calc(100vw - 32px));visibility:hidden;opacity:0;translate:0 10px;transition:opacity .25s ease,translate .25s ease,visibility .25s;pointer-events:none}
+#flashcard[data-edit-open] .edit-panel{visibility:visible;opacity:1;translate:0 0;pointer-events:auto}
+.edit-row{display:flex;gap:8px;align-items:stretch}
+.edit-row input[type="file"]{display:none}
+.dropzone{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;padding:13px 10px;border:1px dashed #ffffff40;border-radius:12px;background:#ffffff0d;color:#fffd;font:inherit;cursor:pointer;transition:border-color .2s,background .2s}
+.dropzone:hover,.dropzone[data-over]{border-color:#ffffff80;background:#ffffff1a}
+.edit-field{display:flex;flex-direction:column;gap:5px}
+.edit-field span{font-size:10px;letter-spacing:.09em;text-transform:uppercase;color:#ffffff8c}
+.edit-field input,.edit-field textarea{font:inherit;color:#fffd;background:#ffffff0d;border:1px solid #ffffff26;border-radius:10px;padding:8px 10px;outline:none;resize:none}
+.edit-field input:focus,.edit-field textarea:focus{border-color:#ffffff66}.edit-reset{justify-content:center;width:100%}</style></head><body><dialog id="flashcard" aria-labelledby="beta-ticket-title" aria-describedby="beta-ticket-description" tabindex="-1" data-beta-dialog data-astro-cid-twdf4nlf><signup-aurora aria-hidden="true" data-placement="top" data-active="false" data-astro-cid-qkyfhp7w="true"><div class="composition" data-astro-cid-qkyfhp7w><canvas data-astro-cid-qkyfhp7w></canvas></div></signup-aurora><script type="module" src="_astro/AuroraBackground.astro_astro_type_script_index_0_lang.GyYscbYj.js?dpl=dpl_AF7U9PUJpxrfoo2N99aDbBza8XbY"></script><div class="beta-viewport" data-beta-viewport data-astro-cid-twdf4nlf><div class="beta-scroll" data-astro-cid-twdf4nlf><div class="beta-scene" data-astro-cid-twdf4nlf><div class="beta-content" data-beta-form data-astro-cid-twdf4nlf style="display:none"></div><div class="ticket-stage" data-ticket-stage hidden inert data-astro-cid-bvaltcfr><div class="ticket-glow" aria-hidden="true" data-astro-cid-bvaltcfr></div><div class="ticket-entrance" data-ticket-entrance data-astro-cid-bvaltcfr><div class="ticket-target" data-ticket-target data-astro-cid-bvaltcfr><section class="ticket" data-ticket aria-labelledby="beta-ticket-title" aria-describedby="beta-ticket-description" style="--ticket-mask: url(&quot;ticket-mask.Dktmghxg.svg&quot;); --ticket-mark: url(&quot;logo.svg&quot;); --foil-texture: url(&quot;foil-texture.Dr5ahRY6.webp&quot;)" data-astro-cid-bvaltcfr><div class="ticket-surface" aria-hidden="true" data-astro-cid-bvaltcfr><div class="ticket-colors" data-astro-cid-bvaltcfr></div><div class="ticket-grain" data-astro-cid-bvaltcfr></div><div class="ticket-sweep" data-ticket-sweep data-astro-cid-bvaltcfr></div><div class="ticket-edge" data-astro-cid-bvaltcfr></div></div><div class="ticket-mark ticket-logo" role="img" aria-label="FlashCard" data-astro-cid-bvaltcfr><div class="ticket-surface ticket-logo-material" aria-hidden="true" data-astro-cid-bvaltcfr><div class="ticket-colors" data-astro-cid-bvaltcfr></div><div class="ticket-grain" data-astro-cid-bvaltcfr></div></div></div><div class="ticket-copy" data-astro-cid-bvaltcfr><h2 class="foil-text" id="beta-ticket-title" data-ticket-title data-foil-text="Hello!" tabindex="-1" data-astro-cid-bvaltcfr>Hello!</h2><p class="foil-text" id="beta-ticket-description" data-ticket-description data-foil-text="You have officially great
+taste in holograms." data-astro-cid-bvaltcfr>You have officially great <br data-astro-cid-bvaltcfr>taste in holograms.</p></div></section></div></div></div></div></div><div class="skin-bar" data-skin-bar><button type="button" class="skin-dot" data-skin-set="aurora" title="Aurora" aria-label="Aurora" style="--dot:linear-gradient(135deg,#a669c0,#ffdb89 40%,#00b7ff)"></button><button type="button" class="skin-dot" data-skin-set="onyx-silver" title="Onyx Silver" aria-label="Onyx Silver" style="--dot:linear-gradient(135deg,#0f0f12,#e8e8f0 55%,#a8a8b4)"></button><button type="button" class="skin-dot" data-skin-set="emerald" title="Emerald" aria-label="Emerald" style="--dot:linear-gradient(135deg,#367c65,#c0f4dd 45%,#449b7d)"></button><button type="button" class="skin-dot" data-skin-set="amethyst" title="Amethyst" aria-label="Amethyst" style="--dot:linear-gradient(135deg,#624887,#dbbff8 45%,#7c5dac)"></button><button type="button" class="skin-dot" data-skin-set="rose" title="Rose" aria-label="Rose" style="--dot:linear-gradient(135deg,#88414f,#f5c0c9 45%,#aa5a67)"></button><button type="button" class="skin-dot" data-skin-set="amber" title="Amber" aria-label="Amber" style="--dot:linear-gradient(135deg,#956d3c,#f9e6b3 45%,#c6984b)"></button><span class="skin-sep"></span><button type="button" class="skin-btn" data-edit-toggle title="Edit logo & text">Edit</button></div><div class="edit-panel" data-edit-panel><div class="edit-row"><button type="button" class="dropzone" data-dropzone><span data-drop-label>Upload logo image</span></button><input type="file" accept="image/*" data-logo-file></div><label class="edit-field"><span>Title</span><input type="text" maxlength="24" data-edit-title placeholder="Hello!" autocomplete="off"></label><label class="edit-field"><span>Text</span><textarea rows="2" maxlength="90" data-edit-desc placeholder="You have officially great&#10;taste in holograms."></textarea></label><button type="button" class="skin-btn edit-reset" data-reset-all>Reset</button></div></dialog><script type="module">
+import { t as initTicket } from './_astro/signupTicket.BSWhIEkT.js';
+const dlg = document.getElementById('flashcard');
+const ticket = document.querySelector('[data-ticket]');
+const assetBase = new URL('_astro/', document.baseURI).href;
+const DEFAULT_MARK = assetBase + 'logo.svg';
+const DEFAULT_TITLE = 'Hello!';
+const DEFAULT_DESC = 'You have officially great\ntaste in holograms.';
+
+const bar = dlg.querySelector('[data-skin-bar]');
+const panel = dlg.querySelector('[data-edit-panel]');
+const editBtn = dlg.querySelector('[data-edit-toggle]');
+const dropzone = panel.querySelector('[data-dropzone]');
+const dropLabel = panel.querySelector('[data-drop-label]');
+const fileInput = panel.querySelector('[data-logo-file]');
+const resetAllBtn = panel.querySelector('[data-reset-all]');
+const titleInput = panel.querySelector('[data-edit-title]');
+const descInput = panel.querySelector('[data-edit-desc]');
+const titleEl = document.querySelector('[data-ticket-title]');
+const descEl = document.querySelector('[data-ticket-description]');
+
+const esc = v => v.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+const applyTitle = v => { titleEl.dataset.foilText = v; titleEl.textContent = v; };
+const applyDesc = v => { descEl.dataset.foilText = v; descEl.innerHTML = v.split('\n').map(esc).join('<br data-astro-cid-bvaltcfr>'); };
+
+// ticket asset URLs (absolute: relative url() in inline custom properties
+// resolves inconsistently across engines) + persisted customizations,
+// applied before the ticket controller captures its originals
+const savedLogo = localStorage.getItem('fc-logo');
+ticket.style.setProperty('--ticket-mask', `url("${assetBase}ticket-mask.Dktmghxg.svg")`);
+ticket.style.setProperty('--foil-texture', `url("${assetBase}foil-texture.Dr5ahRY6.webp")`);
+ticket.style.setProperty('--ticket-mark', `url("${savedLogo || DEFAULT_MARK}")`);
+dropLabel.textContent = savedLogo ? 'Custom logo ✓' : 'Upload logo image';
+const savedTitle = localStorage.getItem('fc-title');
+const savedDesc = localStorage.getItem('fc-desc');
+applyTitle(savedTitle || DEFAULT_TITLE);
+applyDesc(savedDesc || DEFAULT_DESC);
+titleInput.value = savedTitle || '';
+descInput.value = savedDesc || '';
+
+// ---- skins ----
+const SKINS = ['aurora', 'amber', 'emerald', 'amethyst', 'rose', 'onyx-silver'];
+const dots = [...bar.querySelectorAll('[data-skin-set]')];
+let sweepAnim;
+const shineSweep = () => {
+  const el = document.querySelector('[data-ticket-sweep]');
+  if (!el) return;
+  sweepAnim?.cancel();
+  sweepAnim = el.animate(
+    [{ transform: 'translateX(-70%)', opacity: 0 }, { opacity: .65, offset: .35 }, { opacity: .45, offset: .65 }, { transform: 'translateX(70%)', opacity: 0 }],
+    { duration: 600, easing: 'linear' });
+};
+const applySkin = (skin, announce) => {
+  if (!SKINS.includes(skin)) skin = 'aurora';
+  dlg.dataset.skin = skin;
+  dots.forEach(d => d.setAttribute('aria-pressed', String(d.dataset.skinSet === skin)));
+  localStorage.setItem('fc-skin', skin);
+  if (announce) shineSweep();
+};
+bar.addEventListener('click', e => {
+  const dot = e.target.closest('[data-skin-set]');
+  if (dot) applySkin(dot.dataset.skinSet, true);
+});
+applySkin(localStorage.getItem('fc-skin') || 'aurora', false);
+
+// ---- edit panel ----
+const setLogo = (url, save) => {
+  ticket.style.setProperty('--ticket-mark', `url("${url}")`);
+  dropLabel.textContent = save ? 'Custom logo ✓' : 'Upload logo image';
+  if (save) localStorage.setItem('fc-logo', url); else localStorage.removeItem('fc-logo');
+};
+function readFile(f) {
+  if (!f || !f.type.startsWith('image/')) return;
+  const reader = new FileReader();
+  reader.onload = () => { setLogo(reader.result, true); shineSweep(); };
+  reader.readAsDataURL(f);
+}
+editBtn.addEventListener('click', () => dlg.toggleAttribute('data-edit-open'));
+dlg.addEventListener('click', e => {
+  if (!dlg.hasAttribute('data-edit-open')) return;
+  if (e.target.closest('[data-edit-toggle]') || e.target.closest('[data-edit-panel]')) return;
+  dlg.removeAttribute('data-edit-open');
+});
+dropzone.addEventListener('click', () => fileInput.click());
+for (const t of ['dragover', 'dragenter']) dropzone.addEventListener(t, e => { e.preventDefault(); dropzone.dataset.over = ''; });
+for (const t of ['dragleave', 'drop']) dropzone.addEventListener(t, e => { e.preventDefault(); delete dropzone.dataset.over; });
+dropzone.addEventListener('drop', e => readFile(e.dataTransfer?.files?.[0]));
+fileInput.addEventListener('change', () => { readFile(fileInput.files?.[0]); fileInput.value = ''; });
+resetAllBtn.addEventListener('click', () => {
+  setLogo(DEFAULT_MARK, false);
+  titleInput.value = '';
+  descInput.value = '';
+  applyTitle(DEFAULT_TITLE);
+  applyDesc(DEFAULT_DESC);
+  localStorage.removeItem('fc-title');
+  localStorage.removeItem('fc-desc');
+  shineSweep();
+});
+titleInput.addEventListener('input', () => {
+  applyTitle(titleInput.value.trim() ? titleInput.value : DEFAULT_TITLE);
+  localStorage.setItem('fc-title', titleInput.value);
+});
+descInput.addEventListener('input', () => {
+  applyDesc(descInput.value.trim() ? descInput.value : DEFAULT_DESC);
+  localStorage.setItem('fc-desc', descInput.value);
+});
+
+// ---- open + entrance ----
+initTicket(dlg);
+dlg.showModal();
+requestAnimationFrame(() => requestAnimationFrame(() => { dlg.dataset.motionState = 'open'; }));
+setTimeout(() => {
+  dlg.dispatchEvent(new CustomEvent('signup:statechange', { detail: { state: 'success', ownsFocus: false } }));
+}, 750);
+setTimeout(() => { dlg.dataset.uiReady = ''; }, 1300);
+</script></body></html>
