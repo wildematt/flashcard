@@ -4,7 +4,7 @@ A single-page holographic ticket card with a springy pop-in entrance,
 pointer-tracked 3D tilt, iridescent foil material, and live theming —
 run it locally with one command.
 
-![skin previews](skins-preview.png)
+![FlashCard preview](preview.png)
 
 > 灵感来源 / Inspired by **[Elyx](https://elyx.design/)**
 >
@@ -69,7 +69,6 @@ thanks.html   — the page (card DOM + override styles + bootstrap script)
 serve.py      — zero-dependency static server (stdlib only)
 _astro/       — original controller JS, CSS, fonts and ticket assets
 favicon.svg   — tab icon
-skins-preview.png
 ```
 
 ## Thanks
